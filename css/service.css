@@ -1,0 +1,169 @@
+.service1_img {
+  position: relative;
+}
+
+.service1_img::after {
+  content: "";
+  position: absolute;
+  background: url(../img/service1.jpg) no-repeat center;
+  background-size: cover;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+}
+
+.service2_img {
+  position: relative;
+}
+
+.service2_img::after {
+  content: "";
+  position: absolute;
+  background: url(../img/service2.jpg) no-repeat center;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+}
+
+.title span {
+  display: block;
+  font-size: 20px;
+}
+
+.txt p {
+  color: #555;
+}
+
+.txt p strong {
+  font-weight: bold;
+  color: #555;
+  background: linear-gradient(transparent 60%,#fe9);
+}
+
+.frame {
+  display: inline-block;
+  width: 35%;
+  height: 100%;
+  background-color: #eee;
+  border-radius: 5px;
+  margin: 30px;
+  padding: 40px;
+}
+
+.txt h3 span {
+  display: block;
+  font-size: 20px;
+}
+
+.sub_title {
+  position: relative;
+  font-size: 18px;
+  color: #333;
+  padding: 10px 0;
+}
+
+.sub_title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  background-color: #333;
+  width: 40%;
+  height: 2px;
+  margin-top: -1px;
+}
+
+.sub_title span {
+  position: relative;
+  padding-right: 10px;
+}
+
+.photo {
+  width: 340px;
+  height: 220px;
+}
+
+.price {
+  font-size: 17px;
+  text-align: center;
+  color: #803333;
+  padding-top: 15px;
+}
+
+.price span {
+  margin-right: 5px;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.price em {
+  font-style: italic;
+  font-size: 45px;
+}
+
+@media screen and (max-width: 1024px) {
+  .service1_img, .service2_img {
+    padding-top: 100px;
+    height: cover;
+  }
+  
+  .frame {
+    width: 30%;
+  }
+
+  .photo {
+    width: 260px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .service1_img, .service2_img {
+    padding-top: 50px;
+    height: 200px;
+  }
+
+  .frame {
+    width: 30%;
+    margin-left: 2px;
+  }
+
+  .photo {
+    width: 200px;
+    height: 170px;
+  }
+
+  .inner {
+    margin: 12%;
+  }
+
+  .txt h3 span {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .txt h3 {
+    padding-left: 17px;
+  }
+
+  .txt p {
+    font-size: 0.5em;
+    padding-left: 22px;
+  }
+
+  .section {
+    padding: 120px 0;
+    padding-top: 5px;
+  }
+
+  .frame {
+    width: 70%;
+  }
+
+  .price em {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,200 @@
+.about_section {
+  border-top: solid 2px #fe9;
+}
+
+.about_all {
+  position: relative;
+  width: 100%;
+  height: 40em;
+  overflow: hidden;
+  background: url(../img/about.jpg) no-repeat;
+  background-size: cover;
+}
+
+.about_all::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.about_inner {
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.about_inner h1 {
+  font-size: 2.3em;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  padding:10px 10px 10px 10px;
+}
+
+.about_inner p {
+  font-size: 1.1em;
+  font-weight: 700;
+  color: rgb(63, 63, 63);
+  padding-bottom: 5%;
+}
+
+.about_com_all {
+  background: linear-gradient(#fff, #f5f6f7);
+  border-radius: 30px;
+  padding: 60px;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  box-shadow: 20px 20px 30px rgb(201, 200, 200);
+}
+
+.about_com_list {
+  width: 50%;
+}
+
+.about_com_item {
+  margin-bottom: 7.5%;
+}
+
+.about_com_ttl {
+  font-size: 1.75em;
+  display: inline-block;
+}
+
+.about_com_txt {
+  font-size: 1.2em;
+  display: inline-block;
+}
+
+.about_mem {
+  margin-bottom: 200px;
+}
+
+.about_mem.section {
+  padding: 100px 0;
+}
+
+.about_mem_all {
+  background: linear-gradient(#fff, #f5f6f7);
+  border-radius: 30px;
+  padding: 60px;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  box-shadow: 20px 20px 30px #ddd;
+}
+
+.about_mem_per {
+  width: 40%;
+}
+
+.about_mem_ttl {
+  position: relative;
+  font-size: 1.75em;
+  line-height: 1.5;
+  margin-bottom: 2.5%;
+}
+
+.about_mem_ttl::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 35px;
+  background-color: #75a9ff;
+  top: 5%;
+  left: -2.5%;
+}
+
+.about_mem_name {
+  font-size: 1.5em;
+  margin-bottom: 5%;
+}
+
+.about_img {
+  width: 340px;
+  height: 220px;
+}
+
+.about_mem_txt {
+  font-size: 1.1em;
+  line-height: 1.8;
+}
+
+@media screen and (max-width: 1024px) {  
+  .about_mem {
+    margin-bottom: 100px;
+  }
+  
+  .about_mem_per {
+    width: 50%;
+  }
+
+  .about_mem_txt {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about_img {
+    width: 250px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about_inner h1 {
+    font-size: 2em;
+  }
+
+  .about_inner p {
+    font-size: 0.8em;
+  }
+
+  .section {
+    padding: 120px 0;
+  }
+
+  .about_com_all {
+    width: 60%;
+  }
+
+  .about_com_ttl {
+    font-size: 1.5em;
+  }
+
+  .about_com_txt {
+    font-size: 0.9em;
+  }
+
+  .section_ttl {
+    font-size: 30px;
+  }
+
+  .about_mem_ttl {
+    font-size: 1.5em;
+  }
+
+  .about_mem_name {
+    font-size: 1.3em;
+  }
+
+  .about_mem_txt {
+    font-size: 0.8em;
+  }
+
+  .about_mem_ttl::before {
+    left: -5%;
+  }
+
+  .about_img {
+    width: 135px;
+    height: 110px;
+  }
+}

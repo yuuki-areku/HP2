@@ -1,0 +1,114 @@
+.contact_section {
+  padding-top: 100px;
+}
+
+.contact_item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact_txt {
+  width: 40%;
+  line-height: 1.8;
+  font-size: 1.25em;
+}
+
+.contact_img {
+  position: relative;
+  background: url(../img/contact.jpg) no-repeat center;
+  background-size: cover;
+  width: 50%;
+  height: 20em;
+}
+
+.contact_form {
+  width: 100%;
+  margin: 10% auto;
+}
+
+.contact_box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 7.5%;
+}
+
+.contact_box._area {
+  align-items: baseline;
+}
+
+.contact_form_box1,
+.contact_form_box2 {
+  height: 4em;
+  width: 70%;
+  padding-left: 5px;
+  font-size: 1em;
+}
+
+.contact_txtarea {
+  width: 70%;
+  height: 15em;
+  font-size: 1em;
+  padding: 5px;
+}
+
+.contact_form_ttl {
+  width: 40%;
+  height: 100%;
+  font-size: 1.2em;
+  position: relative;
+}
+
+.contact_form_ttl::after {
+  content: "必須";
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  transform: translateY(-50%) translateX(-50%);
+  text-align: center;
+  width: 25%;
+  line-height: 2.5;
+  font-size: 0.75em;
+  color: #c72930;
+  border: 1px solid #c72930;
+  border-radius: 2px;
+}
+
+@media screen and (max-width: 1024px) {
+  .contact_form_ttl {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact_form_ttl::after {
+    margin-left: 5vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section_ttl {
+    font-size: 30px;
+  }
+
+  .contact_txt {
+    font-size: 0.7em;
+  }
+
+  .contact_img {
+    height: 7em;
+  }
+
+  .contact_form_ttl {
+    font-size: 0.7em;
+  }
+
+  .contact_form_box1, .contact_form_box2 {
+    width: 50%;
+    height: 3em;
+  }
+
+  .contact_txtarea {
+    width: 50%;
+    height: 7em;
+  }
+}
